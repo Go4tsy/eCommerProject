@@ -1,7 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
-function BasicExample() {
+function Contact() {
   return (
     <Form>
         <Form.Control type="text" placeholder="Name"  />
@@ -16,10 +16,6 @@ function BasicExample() {
         <Form.Label>Comment</Form.Label>
         <Form.Control as="textarea" rows={3} />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
-      </Form.Group>
 
       <Button variant="primary" type="submit">
         Submit
@@ -28,4 +24,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default Contact;

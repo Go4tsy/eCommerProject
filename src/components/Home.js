@@ -8,7 +8,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 function Home() {
     return (
         <>
-            <Card>
+            <Card className='brandlogoIMG'>
                 <Card.Img variant="top" src="/Images/brandlogo.jpeg" alt='logo' />
                 <Card.Body>
                     <h5 className="card-title">Beauty, Passion and Perfection</h5>
