@@ -12,15 +12,17 @@ import Search from './components/Search';
 
 
 function App() {
-  const [data, setData]= useState([])
-
-
+  const [data, setData] = useState([])
+  const [searchString, setSearchString] = useState('')
 
 
   function getProducts() {
+    
+ 
 
     const url = "https://fakestoreapi.com/products/category/"
-    const newUrl = `${url}${data}`
+    const newUrl = `${url}${searchString}`
+    
     console.log(newUrl)
 
     fetch(newUrl)
@@ -28,48 +30,39 @@ function App() {
       .then(response => {
         setData(response);
         console.log(response)
-        console.log(data)
-        
+
+
       })
       .catch(console.error);
   }
 
   useEffect(() => {
     getProducts();
-    
+
 
   }, []);
 
-  // function handleChange(event) {
-  //   setSearchString(event.target.value);
-  // }
+  return (
+    <>
 
-  // function handleSubmit(event) {
-  //   event.preventDefault();
-    
-  // }
+      <header>
+        <Navigation />
+        <SearchForm getProducts={getProducts} data={data} setSearchString={setSearchString} />
+      </header>
+      <main>
+        <Routes>
+          <Route path='/home' element={<Home />} />
+          <Route path='/Contact' element={<Contact />} />
+          <Route path='/Cart' element={<Cart />} />
+          <Route path='/Trainings/InPerson_training' element={<InPersonTraining />} />
+          <Route path='/Search' element={<Search data={data} setData={setData} />} />
 
-return (
-  <>
-   
-    <header>
-      <Navigation />
-      <SearchForm   getProducts={getProducts} data={data} setData={setData} />
-    </header>
-    <main>
-      <Routes>
-        <Route path='/home' element={<Home />} />
-        <Route path='/Contact' element={<Contact />} />
-        <Route path='/Cart' element={<Cart />} />
-        <Route path='/Trainings/InPerson_training' element={<InPersonTraining  />} />
-        <Route path='/Search' element={<Search  data={data} setData={setData} /> } />
-        
-        
-      </Routes>
-      
-    </main>
-  </>
-);
+
+        </Routes>
+
+      </main>
+    </>
+  );
 }
 
 export default App;

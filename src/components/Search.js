@@ -1,8 +1,7 @@
 import React from "react";
 
 function Search( { data })  {
-
-
+    console.log(data)
 
 // // function handleChange(event) {
 // //     setSearchString(event.target.value);
@@ -13,8 +12,6 @@ function Search( { data })  {
 // //     getProducts(searchString);
 // //     console.log(getProducts)
 // //   }
-
-
  
 return (
     // <Container>
@@ -51,21 +48,27 @@ return (
     //     </Row>
         
     //     </Container>
-    
-    // {data.map((product) => (
-        // <div> 
-        //     {data.map((product) => {
+  
+         <div> 
 
-                // return (
-                    <div>
-                        <img src={data[0].image} />
-                    {/* <img src={product.image} alt={product.title} /> */}
+            {data && data.map((product) => {
+
+                 return (
+                    <div key={product.id}>
+                        
+                        {data[0] ? 
+                        <img src={product.image} alt={product.title}/>
+                        :
+                         "no product found" }  
+
+                    {/* // { <img src={product.image} alt={product.title} /> } */}
+
                     </div>
 
-        //         )
-        //     })}
-        // </div>
-    // ))}
+                )
+             })}
+         </div>
+   
     
 );
 }

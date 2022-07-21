@@ -1,7 +1,9 @@
 
 import {useNavigate} from 'react-router-dom'
 
-const SearchForm = ({getProducts, setData}) => {
+const SearchForm = ({getProducts,  setSearchString, searchString}) => {
+
+
 
 let navigate = useNavigate()
 
@@ -9,7 +11,7 @@ let navigate = useNavigate()
 
 
     function handleChange(event) {
-        setData(event.target.value);
+        setSearchString(event.target.value);
       
       }
     

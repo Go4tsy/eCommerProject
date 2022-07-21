@@ -8,9 +8,8 @@ import Button from 'react-bootstrap/Button';
 function InPersonTraining( ) {
 
 
-    const [data, setData]=useState([])
+    const [productData, setProductData]=useState([])
     
-
 useEffect(() => {
 
     const url = "https://fakestoreapi.com/products"
@@ -21,19 +20,16 @@ useEffect(() => {
         .then(res=>{
 
             console.log(res)
-            setData(res)
+            setProductData(res)
 
         })
 
-            
 },[])
-
-
 
     return (
         <Container>
         <Row xs={1} md={2} lg={3} xl={4} className='g-4'>
-        {data.map((product,index) => {
+        {productData.map((product) => {
                 return(
          <Col key={product.id}>
                 <Card className='h-100'  >
@@ -66,8 +62,7 @@ useEffect(() => {
             
             </Container>
         
-        
-        
+                
     );
 }
 
