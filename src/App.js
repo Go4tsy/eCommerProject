@@ -48,6 +48,7 @@ function App() {
       <header>
         <Navigation />
         <SearchForm getProducts={getProducts} data={data} setSearchString={setSearchString} />
+        <Home />
       </header>
       <main>
         <Routes>
