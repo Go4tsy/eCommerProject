@@ -5,6 +5,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 import ListGroup from 'react-bootstrap/ListGroup';
 
 
+
 function Home() {
     return (
         <>
@@ -22,15 +23,17 @@ function Home() {
             {/* --------------------------------- Collection part --------------------------------- */}
             <CardGroup className='CardContainer'>
                 <Card>
-                    <Card.Link href="#">
+               
+                    <Card.Link href="/Collection/InPerson_training">
                         <Card.Img variant="top" src="/Images/wax.jpg" alt='WaxDemo' />
                         <Card.Body>
                             <Card.Title>1-1 In-Person Trainings <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon></Card.Title>
                         </Card.Body>
                     </Card.Link>
+                   
                 </Card>
                 <Card>
-                    <Card.Link href="#">
+                    <Card.Link href="/Collection/All-Skin-Care-Product">
                         <Card.Img variant="top" src="/Images/products.jpeg" alt='Products' />
                         <Card.Body>
                             <Card.Title> All Skincare Products <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon></Card.Title>
@@ -38,7 +41,7 @@ function Home() {
                     </Card.Link>
                 </Card>
                 <Card>
-                    <Card.Link href="#">
+                    <Card.Link href="/Collection/WaxBible-eBook">
                         <Card.Img variant="top" src="/Images/ebook.png" alt='OnlineBook' />
                         <Card.Body>
                             <Card.Title> The WAX BIBLE (E-BOOK) <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon></Card.Title>
@@ -84,7 +87,7 @@ function Home() {
                             </ul>
                             <div className='footerBottom'>
                                 © 2022,
-                                <a href='/' title> roseeesthethique </a>
+                                <a href='/home' title> roseeesthethique </a>
 
                             </div>
 

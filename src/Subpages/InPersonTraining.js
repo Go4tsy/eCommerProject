@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 
-function InPersonTraining() {
+function InPersonTraining( ) {
 
 
     const [data, setData]=useState([])
@@ -30,8 +30,6 @@ useEffect(() => {
 
 
 
-
-
     return (
         <Container>
         <Row xs={1} md={2} lg={3} xl={4} className='g-4'>
@@ -53,6 +51,7 @@ useEffect(() => {
                     <Card.Title>No Image Available</Card.Title>
                 )}
                 <Card.Text className='text-muted'>{product.title}</Card.Text>
+                <Card.Text className=''>{product.price}$</Card.Text>
             </Card.Body>
             <Card.Footer>
                <Button onClick={() => (product.id)} variant='outline-dark'>
@@ -66,6 +65,9 @@ useEffect(() => {
             </Row>
             
             </Container>
+        
+        
+        
     );
 }
 

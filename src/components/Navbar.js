@@ -12,7 +12,7 @@ function Navigation() {
     return (
         <>
             {/* change the href for the link of the page? */}
-            <div className='topNav' href="/home">Rosée Esthétique <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon></div>
+            <div className='topNav'> <a href="/home"> Rosée Esthétique<FontAwesomeIcon icon={faArrowRight} /> </a></div>
 
             <Navbar bg="light" expand="lg" >
                 <Container>
