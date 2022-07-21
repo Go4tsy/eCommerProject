@@ -87,7 +87,7 @@ function Home() {
                             </ul>
                             <div className='footerBottom'>
                                 © 2022,
-                                <a href='/home' title> roseeesthethique </a>
+                                <a href='/' title> roseeesthethique </a>
 
                             </div>
 

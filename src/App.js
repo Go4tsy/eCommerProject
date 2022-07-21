@@ -48,10 +48,11 @@ function App() {
       <header>
         <Navigation />
         <SearchForm getProducts={getProducts} data={data} setSearchString={setSearchString} />
-        <Home />
+        
       </header>
       <main>
         <Routes>
+        <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
           <Route path='/Contact' element={<Contact />} />
           <Route path='/Cart' element={<Cart />} />
