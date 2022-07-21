@@ -1,8 +1,7 @@
-// import Search from '../components/Search';
-import { useState } from "react";
+
 import {useNavigate} from 'react-router-dom'
 
-const SearchForm = ({getProducts, data, setData}) => {
+const SearchForm = ({getProducts, setData}) => {
 
 let navigate = useNavigate()
 
@@ -16,7 +15,6 @@ let navigate = useNavigate()
     
       function handleSubmit(event) {
         event.preventDefault();
-        console.log(event.target.value)
         getProducts()
         navigate('/Search') 
 

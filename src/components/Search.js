@@ -1,6 +1,7 @@
-// import React from "react";
+import React from "react";
 
 function Search( { data })  {
+
 
 
 // // function handleChange(event) {
@@ -12,8 +13,6 @@ function Search( { data })  {
 // //     getProducts(searchString);
 // //     console.log(getProducts)
 // //   }
-
-
 
 
  
@@ -54,9 +53,18 @@ return (
     //     </Container>
     
     // {data.map((product) => (
-        <div> 
-            <img src={data[0].image} />
-        </div>
+        // <div> 
+        //     {data.map((product) => {
+
+                // return (
+                    <div>
+                        <img src={data[0].image} />
+                    {/* <img src={product.image} alt={product.title} /> */}
+                    </div>
+
+        //         )
+        //     })}
+        // </div>
     // ))}
     
 );

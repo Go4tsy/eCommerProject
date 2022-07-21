@@ -12,9 +12,8 @@ import Search from './components/Search';
 
 
 function App() {
-  const [searchString, setSearchString] = useState('');
   const [data, setData]= useState([])
-console.log(searchString)
+
 
 
 
@@ -29,6 +28,7 @@ console.log(searchString)
       .then(response => {
         setData(response);
         console.log(response)
+        console.log(data)
         
       })
       .catch(console.error);
