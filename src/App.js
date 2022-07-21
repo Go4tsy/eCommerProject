@@ -8,6 +8,7 @@ import InPersonTraining from './Subpages/InPersonTraining';
 import { useState, useEffect } from 'react';
 import SearchForm from './searchFunctionality/SearchForm';
 import Search from './components/Search';
+import Navbar from './components/Navbar';
 
 
 
@@ -18,7 +19,6 @@ function App() {
 
   function getProducts() {
     
- 
 
     const url = "https://fakestoreapi.com/products/category/"
     const newUrl = `${url}${searchString}`
@@ -46,20 +46,21 @@ function App() {
     <>
 
       <header>
-        <Navigation />
-        <SearchForm getProducts={getProducts} data={data} setSearchString={setSearchString} />
+
+        <Navigation getProducts={getProducts}  setSearchString={setSearchString} searchString={searchString}/>
+        {/* <SearchForm getProducts={getProducts}  setSearchString={setSearchString} /> */}
         
       </header>
+
       <main>
         <Routes>
+
         <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
           <Route path='/Contact' element={<Contact />} />
           <Route path='/Cart' element={<Cart />} />
           <Route path='/Trainings/InPerson_training' element={<InPersonTraining />} />
           <Route path='/Search' element={<Search data={data} setData={setData} />} />
-
-
         </Routes>
 
       </main>

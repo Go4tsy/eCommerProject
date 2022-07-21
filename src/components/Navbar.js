@@ -5,10 +5,33 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faMagnifyingGlass, faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 import Button from 'react-bootstrap/Button'
+import {useNavigate} from 'react-router-dom'
 
 
 
-function Navigation() {
+
+function Navigation({getProducts,  setSearchString, searchString}) {
+
+
+
+    let navigate = useNavigate()
+
+
+
+
+    function handleChange(event) {
+        setSearchString(event.target.value);
+      
+      }
+    
+      function handleSubmit(event) {
+        event.preventDefault();
+        getProducts()
+        navigate('/Search') 
+        console.log(searchString)
+       
+      }
+
     return (
         <>
             {/* change the href for the link of the page? */}
@@ -79,8 +102,17 @@ function Navigation() {
 
                     {/* when click on loop, toggle search bar else just be a loop button */}
                     <div className='SearchBtn'>
-                        <input id="SearchBar" type="text" placeholder='search' ></input>
-                        <Button type="ReactRef">
+                    <form onSubmit={handleSubmit} className="form-horizontal">
+        <input
+          placeholder="Search"
+          type="text"
+          name="searchString"
+          onChange={handleChange}
+          
+          required     
+        />
+        </form>
+                        <Button type="ReactRef" >
                             <FontAwesomeIcon icon={faMagnifyingGlass} />
                         </Button>
                     </div>
