@@ -12,7 +12,8 @@ function Home() {
         <div  className='containerHome'>
             <Card>
                 <div className='cardImageContainer'>
-                <Card.Img  variant="top" src="/Images/brandlogo.jpeg" alt='logo' />
+                <Card.Img  variant="logo" src="/Images/brandlogo.jpeg" alt='logo' />
+                
                 <Card.Body>
                     <div className='cardBodyContainer'>
                     <h5 className="card-title">Beauty, Passion and Perfection</h5>

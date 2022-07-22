@@ -3,7 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap');
 
 
-
+.navbar{
+    z-index: 99;
+}
 
                                     /* ALL APP */
 *{
@@ -24,25 +26,25 @@
    padding-top: 5px;
    padding-bottom: 5px;
    width: 100%;
-   position: relative;  
+   z-index: 99;
+   position: relative;
   
   
 }
 
+
                                  /* Home page */
 
- /* .cardImageContainer {
-
-
-} */
-
+.card-img, .card-img-bottom, .card-img-logo {
+/* margin-top: -500px;
+margin-bottom: -300px;
+z-index: -1;  */
+width: 100%;
+margin-bottom: -100px;
+}
 
 .cardBodyContainer{
     text-align: center;
-    position: absolute;  
-     bottom: 20%;
-    left: 25%;
-
 }
 
                                  /* Collection  */
@@ -67,19 +69,18 @@
                                  /* Schedule */
  
 .scheduleContainer {
-    display: flex;
-    flex-wrap: wrap;
-    text-align:center ;
-    margin-left: 650px;
+    display: grid;
+    /* flex-wrap: wrap; */
+    /* text-align:center ; */
+    /* margin-left: 650px; */
     margin-top: 30px;
     margin-bottom: 50px;
 
 }
 
 .scheduleImagos {
-    width: 100%;
-    max-width: 250px;
-    margin-left: 25px;
+    max-width: 100%;
+    /* margin-left: 25px; */
     
     
 }
