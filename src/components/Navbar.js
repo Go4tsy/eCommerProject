@@ -119,13 +119,13 @@ function Navigation({getProducts,  setSearchString, searchString}) {
         </form>
                     </div>
 
-                    {/* <div className="CartBtn">
+                    <div className="CartBtn">
                         <Nav.Link href='/cart'>
                             <Button>
                                 <FontAwesomeIcon icon={faShoppingBag} />
                             </Button>
                         </Nav.Link>
-                    </div> */}
+                    </div>
                 </Container>
             </Navbar>
         </div>
