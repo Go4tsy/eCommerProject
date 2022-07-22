@@ -17,11 +17,11 @@ function Home() {
                     <div className='cardBodyContainer'>
                     <h5 className="card-title">Beauty, Passion and Perfection</h5>
                     <Card.Text>
-                        <h6>
+                        
                         We're always striving to make you feel the best that you can be. Our
                         mission is to push you to become the <br/> best version of yourself by
                         giving you the best products and services.
-                        </h6>
+                        
                     </Card.Text>
                     </div>
                 </Card.Body>

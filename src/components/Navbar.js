@@ -32,7 +32,7 @@ function Navigation({getProducts,  setSearchString, searchString}) {
       }
 
     return (
-        <>
+        <div className='navContainer'>
          
             <div className='topNav'>
 
@@ -128,7 +128,7 @@ function Navigation({getProducts,  setSearchString, searchString}) {
                     </div> */}
                 </Container>
             </Navbar>
-        </>
+        </div>
     );
 }
 
