@@ -30,7 +30,6 @@
 //           type="text"
 //           name="searchString"
 //           onChange={handleChange}
-          
 //           required     
 //         />
 //         </form>

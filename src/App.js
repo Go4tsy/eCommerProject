@@ -3,19 +3,19 @@ import Navigation from './components/Navbar';
 import Home from './components/Home';
 import { Route, Routes } from 'react-router-dom'
 import Contact from './components/Contact';
-import Cart from './components/Cart';
+// import Cart from './components/Cart';
 import InPersonTraining from './Subpages/InPersonTraining';
 import { useState, useEffect } from 'react';
-import SearchForm from './searchFunctionality/SearchForm';
+// import SearchForm from './searchFunctionality/SearchForm';
 import Search from './components/Search';
-import Navbar from './components/Navbar';
+
 
 
 
 function App() {
   const [data, setData] = useState([])
   const [searchString, setSearchString] = useState('')
-
+  // const [comments, setComments]= useState('')
 
   function getProducts() {
     
@@ -37,7 +37,7 @@ function App() {
   }
 
   useEffect(() => {
-    getProducts();
+    getProducts(); 
 
 
   }, []);
@@ -57,8 +57,8 @@ function App() {
 
         <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
-          <Route path='/Contact' element={<Contact />} />
-          <Route path='/Cart' element={<Cart />} />
+          <Route path='/Contact' element={<Contact  />} />
+          {/* <Route path='/Cart' element={<Cart />} /> */}
           <Route path='/Trainings/InPerson_training' element={<InPersonTraining />} />
           <Route path='/Search' element={<Search data={data} setData={setData} />} />
         </Routes>

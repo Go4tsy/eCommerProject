@@ -1,6 +1,14 @@
 /* Navbar */
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
+
+
+
+                                    /* ALL APP */
+
+a {
+   text-decoration: none;
+}
 .topNav {
     background-color: black;
     text-align: center;
@@ -9,6 +17,22 @@
     
 }
 
- a {
-    text-decoration: none;
-}
+
+
+                                /* Navigation */
+
+
+
+
+                                 /* Home page */
+
+
+
+
+
+
+                                 /* Contact page */
+
+
+
+                                    /* Cart page */

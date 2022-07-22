@@ -111,19 +111,19 @@ function Navigation({getProducts,  setSearchString, searchString}) {
           
           required     
         />
-        </form>
                         <Button type="ReactRef" >
                             <FontAwesomeIcon icon={faMagnifyingGlass} />
                         </Button>
+        </form>
                     </div>
 
-                    <div className="CartBtn">
+                    {/* <div className="CartBtn">
                         <Nav.Link href='/cart'>
                             <Button>
                                 <FontAwesomeIcon icon={faShoppingBag} />
                             </Button>
                         </Nav.Link>
-                    </div>
+                    </div> */}
                 </Container>
             </Navbar>
         </>
