@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Portfolio Introduction
+My project is a React app as An E-commerce website that takes data from a Fakestore API.  The technologies used for this app are React, React Bootstrap, CSS and a few other see down below. The user is able to see the schedule , has link of the business everywhere, clear visuality and a search function to find products in need.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Download Portfolio
+1. Fork and clone this repository.
+2. Change into the new directory.
+3. If you plan to make contributions, use git init to initialize your Git repository. Then create and checkout a new branch name response using command git checkout -b response.
+4. Install dependencies with npm install.
 
-In the project directory, you can run:
+#  Project Planning
+1. MainPage :
+- Title of the business 
+- Brand logo visual 
+- Search bar and cart 
+- Contents of the website
+- Schedule
+- Footer with links
 
-### `npm start`
+2. NavBar 
+- Menu to navigate to different pages      
+- Different products
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3.  Training page into in-person trainings
+- Fetching data from api
+- add products to cart
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4.Contact Page
+- Menu to navigate to different pages within the site
+- sending the message to my email
 
-### `npm test`
+5.Search 
+-Searchbar 
+- search categories ( jewelery, electronics , men's clothing , women's clothing )
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#WireFrames
+![image](https://user-images.githubusercontent.com/106879336/180499146-8dab0f14-2778-4406-9067-9cd7b2a51ed2.png)
+https://roseeesthetique.com/
 
-### `npm run build`
+#Technology used
+React | bootstrap | CSS | Font-awesome | emailjs | fakestore API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#  About
+Thank you :goat: for checking out my Portfolio Project. I'm a Canadian Software Engineering student at General Assembly and a future freelancer. I like helping others by sharing ideas and new creations. I’m always looking forward to working with new people and learning more skills. If you would like to work with me, hire me or guide me, please feel free to contact me on Linkedin at https://www.linkedin.com/in/sean-moses-etienne-b5356823a/ . Best regards! :goat:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Website : https://roseeesthetique.netlify.app/
+original one : https://roseeesthetique.com/
+Link to API : https://fakestoreapi.com/products
