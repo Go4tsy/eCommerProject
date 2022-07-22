@@ -1,5 +1,4 @@
 import Button from 'react-bootstrap/Button';
-import form from 'react-bootstrap/form';
 // import emailjs from "@emailjs/browser";
 import emailjs from 'emailjs-com'
 import React, { useRef } from 'react';
@@ -29,18 +28,28 @@ function ContactUs() {
   return (
     <div>
 
-      <div className='container'>
-
-        <form ref={form} onSubmit={sendEmail}>
-          <label>name</label>
-          <input type="text" name="name" />
-          <label>email</label>
-          <input type="email" name="email"l />
-          <label>comment</label>
-          <textarea name="comment" />
-          <input type="submit" value="Send" />
-        </form>
-
+      <div className='formcontainer'>
+        <div className='form'>
+          <form ref={form} onSubmit={sendEmail} className="formInput">
+            <div>
+            <label className='formName'>name</label>
+            <input type="text" name="name" />
+            </div>
+            <div>
+            <label className='formEmail'>email</label>
+            <input type="email" name="email" l />
+            </div>
+            <div>
+            <label className='formtelephone'>telephone</label>
+            <input type="telephone" name="telephone" l />
+            </div>
+            <div>
+            <label className='formComment'>comment</label>
+            <textarea name="comment" />
+            </div>
+            <input type="submit" value="Send" className='formbtn' />
+          </form>
+        </div>
       </div>
     </div>
   );

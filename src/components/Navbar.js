@@ -28,14 +28,16 @@ function Navigation({getProducts,  setSearchString, searchString}) {
         event.preventDefault();
         getProducts()
         navigate('/Search') 
-        console.log(searchString)
        
       }
 
     return (
         <>
-            {/* change the href for the link of the page? */}
-            <div className='topNav'> <a href="/"> Rosée Esthétique<FontAwesomeIcon icon={faArrowRight} /> </a></div>
+         
+            <div className='topNav'>
+
+            <a href="/" className='linkNav'>Rosée Esthétique<FontAwesomeIcon icon={faArrowRight} /></a>
+            </div>
 
             <Navbar bg="light" expand="lg" >
                 <Container>
@@ -111,8 +113,8 @@ function Navigation({getProducts,  setSearchString, searchString}) {
           
           required     
         />
-                        <Button type="ReactRef" >
-                            <FontAwesomeIcon icon={faMagnifyingGlass} />
+                        <Button type="ReactRef" className='searchbtn' >
+                            <FontAwesomeIcon icon={faMagnifyingGlass} className="searchBtn"/>
                         </Button>
         </form>
                     </div>

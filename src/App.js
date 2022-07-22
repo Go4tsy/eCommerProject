@@ -8,6 +8,7 @@ import InPersonTraining from './Subpages/InPersonTraining';
 import { useState, useEffect } from 'react';
 // import SearchForm from './searchFunctionality/SearchForm';
 import Search from './components/Search';
+import Footer from './Footer'
 
 
 
@@ -46,10 +47,8 @@ function App() {
     <>
 
       <header>
-
-        <Navigation getProducts={getProducts}  setSearchString={setSearchString} searchString={searchString}/>
+        <Navigation getProducts={getProducts}  setSearchString={setSearchString} />
         {/* <SearchForm getProducts={getProducts}  setSearchString={setSearchString} /> */}
-        
       </header>
 
       <main>
@@ -64,6 +63,10 @@ function App() {
         </Routes>
 
       </main>
+
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

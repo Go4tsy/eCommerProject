@@ -3,16 +3,16 @@ import React from "react";
 function Search( { data })  {
     console.log(data)
 
-// // function handleChange(event) {
-// //     setSearchString(event.target.value);
-// //   }
 
-// //   function handleSubmit(event) {
-// //     event.preventDefault();
-// //     getProducts(searchString);
-// //     console.log(getProducts)
-// //   }
- 
+// if(!data.category) {
+//     return (
+//         <p>Can't be found.</p>
+
+//     )
+     
+// }
+
+
 return (
     // <Container>
     // <Row xs={1} md={2} lg={3} xl={4} className='g-4'>
@@ -49,9 +49,13 @@ return (
         
     //     </Container>
   
+
+
+
          <div> 
 
             {data && data.map((product) => {
+                console.log(product)                
 
                  return (
                     <div key={product.id}>
@@ -59,9 +63,7 @@ return (
                         {data[0] ? 
                         <img src={product.image} alt={product.title}/>
                         :
-                         "no product found" }  
-
-                    {/* // { <img src={product.image} alt={product.title} /> } */}
+                        'no product' }  
 
                     </div>
 
